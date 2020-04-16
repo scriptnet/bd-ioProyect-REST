@@ -21,6 +21,6 @@
     "electron": "^8.2.2"
   },
   "dependencies": {
-    "angular": "^1.7.6"
+    "angular": ">=1.7.9"
   }
 }
