@@ -29,14 +29,37 @@
         require(`${srcPath}/app`);
     </script>
     <!-- loading -->
-    <div class="fondo">
+    <!-- <div class="fondo">
         <div class="box-loader loading">
             <h3>Cargando aplicación.</h3>
             <div class="loader"></div>
           </div>
+    </div> -->
+  <!-- loading / end -->
+    <div id="app" class="ui_app">
+        <div class="topFrame">
+              <ul class="topbarSearch">
+                <!-- search -->
+                <div class="search" >
+                  <form class="search-form">
+                    <input type="search" placeholder="Buscar" id="search" class="search_field">
+                    <i class="fa fa-search search-icon"></i>
+                    <input type="submit" id="submit" value="Submit" class="searchButton" />
+                  </form>
+                  <div class="dropdown" id="searchDropDown">
+                  </div>
+                </div>
+                <!-- search / end -->
+              </ul>
+        </div>
+       
+        <main-nav></main-nav>
+       
+
+
+        <div class="mainView" ui-view> </div>
     </div>
 
-  <!-- loading / end -->
    
 </body>
 </html>

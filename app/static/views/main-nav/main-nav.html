@@ -1,0 +1,47 @@
+<aside class="aside">
+    <header class="header">
+        <!-- user -->
+        <div class="user">
+          <div class="user_profile clearfix">
+            <img ng-click="loadUserProfile()" ng-src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" alt="dsd" class="user_thumb">
+
+            <div class="user_inner">
+              <a href="" class="user_name" title="asd" ng-click="loadUserProfile()">User</a>
+              <a href="" class="user_logOut" ng-click="logOut()">Log out</a>
+            </div>
+          </div>
+          <div class="user_info">
+            <span class="user_info_wrap" ui-sref="following">
+                        <small>asdasd</small>
+                        <small>following</small>
+                    </span>
+            <span class="user_info_wrap" ui-sref="followers">
+                        <small>asdasd</small>
+                        <small>followers</small>
+                    </span>
+          </div>
+        </div>
+        <!-- user / end -->
+      </header>
+
+       <!-- main nav -->
+        <nav class="mainNav">
+            <h2 class="ui_title">Menu</h2>
+            <ul class="mainNav_nav">
+            <li class="mainNav_item" ui-sref-active="active">
+                <a class="mainNav_button" ui-sref="charts">
+                <i class="fa fa-trophy"></i>
+                <span class="mainNav_tit">Dashboard</span>
+                </a>
+            </li>
+            <li class="mainNav_item" ui-sref-active="active">
+                <a class="mainNav_button" ui-sref="stream">
+                <i class="fa fa-cloud"></i>
+                <span class="mainNav_tit">otro</span>
+                </a>
+            </li>
+           
+            </ul>
+        </nav>
+<!-- main nav / end -->
+</aside>

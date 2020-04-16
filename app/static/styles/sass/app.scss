@@ -1,5 +1,17 @@
 @charset "utf-8";
 
 @import "_componentes/_config";
+@import "_componentes/_default";
+@import "_componentes/_topFrame";
+@import "_componentes/_appContainer";
 
+@import "_componentes/_user";
+@import "_componentes/_aside";
+
+
+
+@import "_componentes/_search";
+@import "_componentes/_view-container";
+@import "_componentes/_dropdown";
 @import "_componentes/_loader";
+
