@@ -1,7 +1,7 @@
 ! function(a){
 
     function b(a) {
-        a.title = "Welcome";
+        a.title = "Hola mundo";
         
     }
     a.module("app", [])
