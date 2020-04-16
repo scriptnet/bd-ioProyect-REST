@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body ng-controller="appController">
+    <script>
+        const nodeModulesPath = '../node_modules';
+        window.$ = window.jQuery = require(`${nodeModulesPath}/jquery/dist/jquery.min.js`);
+        require(`${nodeModulesPath}/angular/angular.min.js`);
+    </script>
+
+    <script>
+        const srcPath = './static';
+        require(`${srcPath}/app`);
+    </script>
+    {{title}}
+</body>
+</html>
