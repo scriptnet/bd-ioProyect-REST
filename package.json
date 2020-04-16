@@ -19,5 +19,8 @@
   "homepage": "https://github.com/scriptnet/bd-ioProyect-REST#readme",
   "devDependencies": {
     "electron": "^8.2.2"
+  },
+  "dependencies": {
+    "angular": "^1.7.6"
   }
 }
