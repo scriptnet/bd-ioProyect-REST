@@ -4,8 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "prestart": "npm run release",
+    "start": "electron .",
+    "release":"npm run sass:prod",
+    "sass:prod": "./node_modules/.bin/node-sass --include-path ./app/static/styles/sass --output-style compressed ./app/static/styles/sass/app.scss  ./app/static/styles/css/app.css",
+    "sass:dev": "./node_modules/.bin/node-sass --recursive --include-path ./app/static/styles/sass --output-style expanded ./app/static/styles/sass/app.scss  ./app/static/styles/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,8 @@
   },
   "homepage": "https://github.com/scriptnet/bd-ioProyect-REST#readme",
   "devDependencies": {
-    "electron": "^8.2.2"
+    "electron": "^8.2.2",
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.25",

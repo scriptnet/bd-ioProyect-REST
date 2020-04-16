@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/styles/css/app.css">
     <link rel="stylesheet" href="../node_modules/angular-hotkeys/build/hotkeys.min.css">
     <link rel="stylesheet" href="../node_modules/ng-dialog/css/ngDialog.min.css">
     <link rel="stylesheet" href="../node_modules/toastr/build/toastr.min.css">
@@ -27,6 +28,9 @@
         const srcPath = './static';
         require(`${srcPath}/app`);
     </script>
-    {{title}}
+    <div class="app">
+        {{title}}
+    </div>
+   
 </body>
 </html>
