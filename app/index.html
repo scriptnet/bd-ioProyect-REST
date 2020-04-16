@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/angular-hotkeys/build/hotkeys.min.css">
+    <link rel="stylesheet" href="../node_modules/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="../node_modules/toastr/build/toastr.min.css">
+    
 </head>
 <body ng-controller="appController">
     <script>
         const nodeModulesPath = '../node_modules';
         window.$ = window.jQuery = require(`${nodeModulesPath}/jquery/dist/jquery.min.js`);
         require(`${nodeModulesPath}/angular/angular.min.js`);
+        require(`${nodeModulesPath}/@uirouter/angularjs/release/angular-ui-router.min.js`);
+        require(`${nodeModulesPath}/angular-hotkeys/build/hotkeys.min.js`);
+        require(`${nodeModulesPath}/ng-infinite-scroll/build/ng-infinite-scroll.min.js`);
+        require(`${nodeModulesPath}/angular-sanitize/angular-sanitize.min.js`);
+        require(`${nodeModulesPath}/ng-dialog/js/ngDialog.min.js`);
     </script>
 
     <script>
